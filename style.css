@@ -17,13 +17,13 @@ body{
   border-radius: 5px;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
 }
-.form-container .signup{
+.signup, .login{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.signup h2{
+.signup h2, .login h2{
   margin: 20px 0;
   font-weight: bolder;
   font-size: 30px;
@@ -42,7 +42,7 @@ form input{
   outline: none;
   margin-bottom: 25px;
 }
-form .signup-btn{
+form .signup-btn, .login-btn{
   color: #fff;
   background: rgb(87, 212, 206);
   width: 50%;
@@ -50,17 +50,49 @@ form .signup-btn{
   display: block;
   margin: 0 auto;
 }
-form .signup-btn:hover{
+form .signup-btn:hover, .login-btn:hover{
   background: #120E43;
   transition: all 0.7s ease;
 }
-.signup h3{
+.signup h3 , .login h3{
   margin-top: 20px;
   color: #555;
 }
-.signup a {
+.signup a , .login a{
   text-decoration: none;
   color: rgb(87, 183, 212);
   font-weight: bolder;
   font-size: 25px;
+}
+a:hover{
+  color: #1d75c7;
+  transition: 0.5s ease;
+}
+/* --------- login or page --------- */
+.or{
+  margin-top: 30px;
+  width: 70%;
+}
+.or p{
+  margin: -8px auto 0;
+  background: #fff;
+  width: 30px;
+  text-align: center;
+}
+.icons{
+  text-align: center;
+  margin: 15px;
+}
+.icons i{
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 0;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.icons i:hover{
+  background: #101b4e;
+  color: #fff;
 }
